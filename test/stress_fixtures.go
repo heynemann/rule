@@ -1,6 +1,6 @@
 package test
 
-import "github.com/NSXBet/rule"
+import "github.com/heynemann/rule"
 
 /* ---------- Whitespace and Formatting Edge Cases ---------- */
 

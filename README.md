@@ -26,8 +26,16 @@ A **blazingly fast**, **zero-allocation** rule engine for Go that evaluates logi
 ### Installation
 
 ```bash
-go get github.com/NSXBet/rule
+go get github.com/heynemann/rule@v0.2.0
 ```
+
+The module path is `github.com/heynemann/rule` from v0.2.0. v0.1.0 and earlier
+declare `github.com/NSXBet/rule`. To upgrade: delete both the
+`require github.com/NSXBet/rule ...` line and the
+`replace github.com/NSXBet/rule => github.com/heynemann/rule ...` line from
+`go.mod`, change imports from `github.com/NSXBet/rule` to
+`github.com/heynemann/rule`, then run
+`go get github.com/heynemann/rule@v0.2.0 && go mod tidy`.
 
 ### Quick Example
 
@@ -38,7 +46,7 @@ import (
     "fmt"
     "log/slog"
     
-    "github.com/NSXBet/rule"
+    "github.com/heynemann/rule"
 )
 
 func main() {
@@ -883,7 +891,7 @@ Want to verify these results? Run the benchmarks on your hardware:
 
 ```bash
 # Clone the repository
-git clone https://github.com/NSXBet/rule
+git clone https://github.com/heynemann/rule
 cd rule
 
 # Run all comparison benchmarks  
@@ -993,7 +1001,7 @@ This section provides a comprehensive compatibility analysis between NSXBet/rule
 - [ ] Check for error handling around property access
 
 **Phase 2: Basic Migration**
-- [ ] Update import: `"github.com/nikunjy/rules"` → `"github.com/NSXBet/rule"`
+- [ ] Update import: `"github.com/nikunjy/rules"` → `"github.com/heynemann/rule"`
 - [ ] Replace API calls: `rules.Evaluate()` → `engine.Evaluate()`
 - [ ] Add quotes to unquoted string literals
 - [ ] Test existing rule evaluation

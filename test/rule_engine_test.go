@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/NSXBet/rule"
+	"github.com/heynemann/rule"
 	"github.com/stretchr/testify/require"
 )
 

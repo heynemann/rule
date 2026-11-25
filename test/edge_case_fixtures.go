@@ -4,7 +4,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/NSXBet/rule"
+	"github.com/heynemann/rule"
 )
 
 /* ---------- Edge Cases & Advanced Scenarios ---------- */
