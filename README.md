@@ -26,8 +26,13 @@ A **blazingly fast**, **zero-allocation** rule engine for Go that evaluates logi
 ### Installation
 
 ```bash
-go get github.com/NSXBet/rule
+go get github.com/heynemann/rule@v0.2.0
 ```
+
+The module path is `github.com/heynemann/rule` from v0.2.0. v0.1.0 and earlier
+declare `github.com/NSXBet/rule`; to upgrade, change imports from
+`github.com/NSXBet/rule` to `github.com/heynemann/rule` and drop any
+`replace github.com/NSXBet/rule => github.com/heynemann/rule ...` line.
 
 ### Quick Example
 
@@ -38,7 +43,7 @@ import (
     "fmt"
     "log/slog"
     
-    "github.com/NSXBet/rule"
+    "github.com/heynemann/rule"
 )
 
 func main() {
@@ -883,7 +888,7 @@ Want to verify these results? Run the benchmarks on your hardware:
 
 ```bash
 # Clone the repository
-git clone https://github.com/NSXBet/rule
+git clone https://github.com/heynemann/rule
 cd rule
 
 # Run all comparison benchmarks  

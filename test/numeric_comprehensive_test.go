@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/NSXBet/rule"
+	"github.com/heynemann/rule"
 )
 
 // TestAllNumericScenarios comprehensively tests ALL numeric comparison scenarios.

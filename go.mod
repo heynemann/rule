@@ -1,4 +1,4 @@
-module github.com/NSXBet/rule
+module github.com/heynemann/rule
 
 go 1.24.3
 

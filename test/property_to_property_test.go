@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/NSXBet/rule"
+	"github.com/heynemann/rule"
 )
 
 // TestPropertyToPropertyComparisons tests all 5 documented property-to-property comparison scenarios.
